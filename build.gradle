@@ -14,13 +14,10 @@ java {
     }
 }
 
-repositories {
-    mavenCentral()
-    mavenLocal()
-}
+
 
 dependencies {dependencies {
-    implementation'fr.eni:service3'
+    implementation files('libs/service3-1.0.0.jar')
     implementation 'org.springframework.boot:spring-boot-starter'
     implementation 'org.springframework.boot:spring-boot-starter-webmvc'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
