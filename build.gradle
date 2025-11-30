@@ -14,9 +14,11 @@ java {
     }
 }
 
+repositories {
+    mavenCentral()
+}
 
-
-dependencies {dependencies {
+dependencies {
     implementation files('libs/service3-1.0.0.jar')
     implementation 'org.springframework.boot:spring-boot-starter'
     implementation 'org.springframework.boot:spring-boot-starter-webmvc'
@@ -26,4 +28,4 @@ dependencies {dependencies {
 
 tasks.named('test') {
     useJUnitPlatform()
-}}
+}
