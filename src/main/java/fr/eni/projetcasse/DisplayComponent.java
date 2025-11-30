@@ -4,7 +4,9 @@ import fr.eni.projetcasse.service.Service1;
 import fr.eni.projetcasse.service.Service2;
 import fr.eni.service3.Service3;
 import jakarta.annotation.PostConstruct;
+import org.springframework.stereotype.Component;
 
+@Component
 public class DisplayComponent {
     private Service1 service1;
     private Service2 service2;
