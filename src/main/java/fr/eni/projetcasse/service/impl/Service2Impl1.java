@@ -1,0 +1,19 @@
+package fr.eni.projetcasse.service.impl;
+
+import fr.eni.projetcasse.service.Service2;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service
+public class Service2Impl1 implements Service2 {
+
+    @Override
+    public String fonctionnalite1() {
+        return "Fonctionnalite1 fonctionnelle !";
+    }
+
+    @Override
+    public String fonctionnalite2() {
+        return "Ca n'est pas cette fonctionnalité qu'il fallait appeler !!!!!!!";
+    }
+}
