@@ -2,9 +2,14 @@ package fr.eni.projetcasse.service.impl;
 
 import fr.eni.projetcasse.service.Service1;
 import fr.eni.projetcasse.service.Service2;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+@Service
 public class Service1Impl1 implements Service1 {
 
+
+    @Autowired // on pourrait utiliser une injection par constructeur aussi (recommandé)
     private Service2 service2;
 
     @Override
